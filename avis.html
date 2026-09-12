@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez les avis des clients de La Morille Canourgaise et partagez votre expérience.">
+  <title>Avis clients | La Morille Canourgaise</title>
+  <link rel="icon" type="image/png" href="logos/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="reviews-page">
+  <header class="site-header"><div class="container nav">
+    <a class="brand" href="index.html"><img class="brand-logo" src="logos/logo-la-morille-canourguaise.png" alt="La Morille Canourgaise"><span>La Morille Canourgaise</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav><span class="nav-mushroom" aria-hidden="true">🍄</span><ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li><li><a href="histoire.html">L'histoire des morilles et de la Lozère</a></li><li><a href="recettes.html">Idées de recettes</a></li><li><a href="magasin.html">Le magasin</a></li><li><a href="contact.html">Contact</a></li><li><a href="connexion.html">Mon compte</a></li>
+    </ul></nav>
+  </div></header>
+  <main>
+    <section class="reviews-hero"><div class="container">
+      <span class="eyebrow">Vos mots comptent</span>
+      <h1>Les avis de notre communauté</h1>
+      <p>Chaque témoignage raconte une rencontre avec les morilles, la Lozère et le savoir-faire de La Morille Canourgaise.</p>
+    </div></section>
+    <section class="section"><div class="container reviews-layout">
+      <aside class="review-form-card">
+        <span class="kicker">Partager votre expérience</span>
+        <h2>Votre avis a de la valeur</h2>
+        <p>Une dégustation, une recette ou un souvenir de Lozère : racontez-nous votre expérience.</p>
+        <form class="review-form" id="review-form">
+          <label>Votre prénom ou nom<input name="name" type="text" maxlength="80" required placeholder="Marie"></label>
+          <label>Votre note<select name="rating" required><option value="5">★★★★★ — Exceptionnel</option><option value="4">★★★★☆ — Très bien</option><option value="3">★★★☆☆ — Bien</option><option value="2">★★☆☆☆ — Peut mieux faire</option><option value="1">★☆☆☆☆ — À améliorer</option></select></label>
+          <label>Votre commentaire<textarea name="message" maxlength="800" required placeholder="Partagez votre expérience..."></textarea></label>
+          <button class="button" type="submit">Publier mon avis <span>↗</span></button>
+          <p class="review-success" id="review-success" hidden>Merci pour votre témoignage.</p>
+        </form>
+      </aside>
+      <section class="reviews-wall" aria-labelledby="reviews-title">
+        <div class="reviews-wall-head"><div><span class="kicker">La parole des clients</span><h2 id="reviews-title">Tous les avis</h2></div><div class="reviews-summary"><div><strong id="reviews-average">— / 5</strong><span class="review-stars" id="reviews-average-stars">☆☆☆☆☆</span></div><span><strong id="reviews-count">0</strong> avis</span></div></div>
+        <div class="reviews-breakdown" id="reviews-breakdown" aria-label="Répartition des votes"></div>
+        <div class="reviews-list" id="reviews-list"></div>
+        <p class="reviews-empty" id="reviews-empty">Les premiers avis seront les vôtres. Partagez votre expérience avec la communauté.</p>
+      </section>
+    </div></section>
+  </main>
+  <footer><div class="container footer-row"><span>© 2026 La Morille Canourgaise — Tous droits réservés.</span><a href="contact.html">Passer au contact →</a></div></footer>
+  <script src="script.js"></script><script src="animation.js"></script>
+</body>
+</html>
